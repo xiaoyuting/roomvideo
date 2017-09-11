@@ -32,7 +32,7 @@
                                     <rect key="frame" x="0.0" y="0.0" width="375" height="200"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
-                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Please enter a room name." lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lZU-wT-4R2">
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="输入房间号" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lZU-wT-4R2">
                                             <rect key="frame" x="18" y="18" width="227" height="21"/>
                                             <constraints>
                                                 <constraint firstAttribute="height" constant="21" id="gqJ-eG-fUp"/>
@@ -59,7 +59,7 @@
                                                 <constraint firstAttribute="height" constant="2" id="Jev-MF-QWj"/>
                                             </constraints>
                                         </view>
-                                        <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Room name must be 5 or more characters and include only letters and numbers." lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="B7r-GU-GE9">
+                                        <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="输入创建会议房间号不少于5位数字" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="B7r-GU-GE9">
                                             <rect key="frame" x="40" y="93" width="295" height="40"/>
                                             <constraints>
                                                 <constraint firstAttribute="height" constant="40" id="hig-Mv-0iO"/>
@@ -76,7 +76,7 @@
                                                 <constraint firstAttribute="height" constant="40" id="iMz-I2-Gu9"/>
                                             </constraints>
                                             <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="14"/>
-                                            <state key="normal" title="JOIN">
+                                            <state key="normal" title="进入">
                                                 <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                             </state>
                                             <state key="disabled">
@@ -202,7 +202,7 @@
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="dd3-fP-LRC" userLabel="Footer View">
                                 <rect key="frame" x="0.0" y="587" width="375" height="80"/>
                                 <subviews>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Waiting for someone to join this room: " lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2OI-v1-phz">
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="等待其他人加入" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2OI-v1-phz">
                                         <rect key="frame" x="10" y="10" width="355" height="21"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="21" id="qyF-Ki-4dS"/>
@@ -236,14 +236,22 @@
                                 <rect key="frame" x="187.5" y="0.0" width="187.5" height="333.5"/>
                                 <color key="backgroundColor" red="0.15056313574314117" green="0.15055863559246063" blue="0.15056121349334717" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                             </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="asI-mF-RED">
+                                <rect key="frame" x="0.0" y="333.5" width="375" height="253.5"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            </view>
                         </subviews>
                         <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
+                            <constraint firstAttribute="trailing" secondItem="asI-mF-RED" secondAttribute="trailing" id="0zV-Vz-W7P"/>
                             <constraint firstItem="pNG-Z1-33i" firstAttribute="leading" secondItem="hBv-zP-oWI" secondAttribute="trailing" id="7Y0-03-zfy"/>
                             <constraint firstItem="hBv-zP-oWI" firstAttribute="leading" secondItem="K8r-3C-MXA" secondAttribute="leading" id="A0f-J1-3Oq"/>
+                            <constraint firstItem="dd3-fP-LRC" firstAttribute="top" secondItem="asI-mF-RED" secondAttribute="bottom" id="JiC-nH-XNh"/>
                             <constraint firstItem="dd3-fP-LRC" firstAttribute="leading" secondItem="K8r-3C-MXA" secondAttribute="leading" id="K1J-Z4-FnO"/>
+                            <constraint firstItem="asI-mF-RED" firstAttribute="leading" secondItem="K8r-3C-MXA" secondAttribute="leading" id="L8n-2v-3Na"/>
                             <constraint firstItem="pNG-Z1-33i" firstAttribute="top" secondItem="l8x-7U-gJE" secondAttribute="bottom" constant="-20" id="Qfm-6c-JrH"/>
                             <constraint firstItem="hBv-zP-oWI" firstAttribute="top" secondItem="K8r-3C-MXA" secondAttribute="top" id="RpQ-i1-veX"/>
+                            <constraint firstItem="asI-mF-RED" firstAttribute="top" secondItem="pNG-Z1-33i" secondAttribute="bottom" id="X7q-K3-SJU"/>
                             <constraint firstAttribute="trailing" secondItem="dd3-fP-LRC" secondAttribute="trailing" id="Xtn-ft-kwF"/>
                             <constraint firstItem="pNG-Z1-33i" firstAttribute="width" secondItem="hBv-zP-oWI" secondAttribute="width" id="h4f-Ug-KUL"/>
                             <constraint firstAttribute="trailing" secondItem="pNG-Z1-33i" secondAttribute="trailing" id="lEL-vn-UGF"/>
@@ -276,10 +284,10 @@
             <objects>
                 <navigationController id="bnz-jK-0BD" sceneMemberID="viewController">
                     <simulatedStatusBarMetrics key="simulatedStatusBarMetrics" statusBarStyle="lightContent"/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" barStyle="black" id="jkN-Cj-PtW">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" misplaced="YES" barStyle="black" id="jkN-Cj-PtW">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
-                        <color key="barTintColor" red="0.15056313574314117" green="0.15055863559246063" blue="0.15056121349334717" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="barTintColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
                     </navigationBar>
                     <connections>
                         <segue destination="uac-VP-Qaf" kind="relationship" relationship="rootViewController" id="tJ7-ZR-3HD"/>
