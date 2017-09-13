@@ -172,6 +172,7 @@
 					5C80AA751AAB5DF300F21FFA = {
 						CreatedOnToolsVersion = 6.1.1;
 						DevelopmentTeam = 9VDDJ828HQ;
+						ProvisioningStyle = Automatic;
 					};
 				};
 			};
@@ -374,6 +375,7 @@
 			baseConfigurationReference = A91A157833594B50E74E767F /* Pods.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				DEVELOPMENT_TEAM = 9VDDJ828HQ;
 				INFOPLIST_FILE = AppRTC/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -381,8 +383,8 @@
 					"$(inherited)",
 					"$(PROJECT_DIR)/Lib",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.roomvideo.AppRTC;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 			};
 			name = Debug;
 		};
@@ -391,6 +393,7 @@
 			baseConfigurationReference = B6DABCBD6F43FEC6530D36B2 /* Pods.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				DEVELOPMENT_TEAM = 9VDDJ828HQ;
 				INFOPLIST_FILE = AppRTC/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -398,8 +401,8 @@
 					"$(inherited)",
 					"$(PROJECT_DIR)/Lib",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.roomvideo.AppRTC;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 			};
 			name = Release;
 		};

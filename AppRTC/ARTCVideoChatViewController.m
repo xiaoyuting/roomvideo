@@ -93,7 +93,7 @@
 
 - (void)setRoomName:(NSString *)roomName {
     _roomName = roomName;
-    self.roomUrl = [NSString stringWithFormat:@"%@/%@", SERVER_HOST_URL, roomName];
+    self.roomUrl = [NSString stringWithFormat:@"%@/r/%@", SERVER_HOST_URL, roomName];
 }
 
 - (void)disconnect {
